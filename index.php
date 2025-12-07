@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <div class="nav">
+            <ul class="ul_nav" style="list-style: none;">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Моя библиотека</a></li>
+                <li><a href="#">Подержка</a></li>
+            </ul>
+        </div>
+        <div class="reg">
+            <a href="#" class="auth-link login">Войти</a>
+            <div class="auth-separator"></div>
+            <a href="#" class="auth-link register">Регистрация</a>
+        </div>
+    </header>
+    <header class="second_head">
+        <div class="search-panel">
+
+            <div class="search-icon-box">
+                <img src="icon/search.svg" alt="search">
+            </div>
+
+            <input type="text" class="search-input" placeholder="">
+
+        </div>
+
+        <div class="header-icons">
+            <img src="icon/free-button.svg" alt="Free">
+            <img src="icon/basket-alt-3-light.svg" alt="Cart">
+            <img src="icon/heart.svg" alt="Heart">
+            <img src="icon/language.svg" alt="Language">
+        </div>
+    </header>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
