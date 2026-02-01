@@ -57,24 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         dateSpan.textContent = nextFriday.toLocaleDateString('ru-RU', options);
     }
 
-    const revealCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('reveal-active');
 
-                observer.unobserve(entry.target);
-            }
-        });
-    };
-
-    const revealObserver = new IntersectionObserver(revealCallback, {
-        threshold: 0.15
-    });
-
-
-    document.querySelectorAll('.reveal, .stagger-reveal').forEach(el => {
-        revealObserver.observe(el);
-    });
 
 
     const recTabs = document.querySelectorAll('.rec-tab');

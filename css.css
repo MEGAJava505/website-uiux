@@ -1702,38 +1702,22 @@ header {
 
 /* --- Reveal on Scroll System --- */
 .reveal {
-    opacity: 0;
-    transition: opacity 0.5s ease;
+    opacity: 1 !important;
 }
 
 .reveal.reveal-active {
-    opacity: 1;
-    animation: fadeInUp 0.5s forwards ease-out;
+    opacity: 1 !important;
+    animation: none !important;
 }
 
-/* Staggered animations for cards/lists */
-.stagger-reveal.reveal-active>*:nth-child(1) {
-    animation: fadeInUp 0.4s 0.05s forwards;
+/* Animations (DISABLED) */
+.stagger-reveal.reveal-active>* {
+    animation: none !important;
+    opacity: 1 !important;
 }
 
-.stagger-reveal.reveal-active>*:nth-child(2) {
-    animation: fadeInUp 0.4s 0.1s forwards;
-}
-
-.stagger-reveal.reveal-active>*:nth-child(3) {
-    animation: fadeInUp 0.4s 0.15s forwards;
-}
-
-.stagger-reveal.reveal-active>*:nth-child(4) {
-    animation: fadeInUp 0.4s 0.2s forwards;
-}
-
-.stagger-reveal.reveal-active>*:nth-child(5) {
-    animation: fadeInUp 0.4s 0.25s forwards;
-}
-
-.stagger-reveal.reveal-active>*:nth-child(6) {
-    animation: fadeInUp 0.4s 0.3s forwards;
+.stagger-reveal>* {
+    opacity: 1 !important;
 }
 
 /* --- Enhanced Hover States --- */
@@ -1804,11 +1788,9 @@ button,
     animation: glowPulse 2s infinite ease-in-out;
 }
 
-/* Initial animations on load */
-header {
-    animation: fadeInRight 1s cubic-bezier(0.2, 0.8, 0.2, 1);
-}
-
+/* Initial animations (DISABLED) */
+header,
 .hero-carousel {
-    animation: fadeInUp 1s 0.2s backwards cubic-bezier(0.2, 0.8, 0.2, 1);
+    animation: none !important;
+    opacity: 1 !important;
 }
