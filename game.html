@@ -1,52 +1,429 @@
-<!DOCTYPE html>
-<html lang="ru">
-
+<!doctype html>
+<html lang="en">
+  
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Страница игры</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Details</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
 
+  
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/figama/logo.png" alt="Logo">
-        </div>
-        <div class="nav">
-            <ul class="ul_nav" style="list-style: none;">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Моя библиотека</a></li>
-                <li><a href="#">Подержка</a></li>
-            </ul>
-        </div>
-        <div class="search-box">
-            <div class="search-icon-box">
-                <img src="icon/search.svg" class="search-icon" alt="Search">
-            </div>
-            <input type="text" class="search-input" placeholder="Поиск игр...">
-        </div>
-        <div class="header-icons">
-            <img src="icon/user.svg" alt="User">
-            <img src="icon/cart.svg" alt="Cart">
-        </div>
+    
+
+<header>
+      
+<div class="logo">
+        <img src="images/figama/logo.png" alt="Logo" />
+      </div>
+      
+<div class="nav">
+        <ul class="ul_nav" style="list-style: none">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Моя библиотека</a></li>
+          <li><a href="#">Подержка</a></li>
+        </ul>
+      </div>
+      
+<div class="reg">
+        <a href="#" class="auth-link login">Войти</a>
+        <div class="auth-separator"></div>
+        <a href="#" class="auth-link register">Регистрация</a>
+      </div>
     </header>
 
-    <main class="game-page" style="margin-top: 10vw; text-align: center; color: white;">
-        <h1>Название игры</h1>
-        <p>Подробное описание игры, скриншоты и системные требования будут здесь.</p>
-    </main>
+    
 
-    <footer style="margin-top: 10vw;">
-        <div class="footer-line"></div>
-        <ul class="footer-links">
-            <li><a href="#">Политика конфиденциальности</a></li>
-            <li><a href="#">Условия пользования</a></li>
-        </ul>
+<header class="second_head">
+      <div class="search-panel">
+        <div class="search-icon-box">
+          <img src="icon/search.svg" alt="search" />
+        </div>
+        <input type="text" class="search-input" placeholder="" />
+      </div>
+      <div class="header-icons">
+        <img src="icon/free-button.svg" alt="Free" />
+        <img src="icon/basket-alt-3-light.svg" alt="Cart" />
+        <img src="icon/heart.svg" alt="Heart" />
+        <img src="icon/language.svg" alt="Language" />
+      </div>
+    </header>
+
+    
+
+<section class="game-hero">
+      <div class="hero-cover">
+        <img src="images/nfs_unbound.jpg" alt="Need for Speed Unbound" />
+      </div>
+      <div class="hero-info">
+        <h1 class="game-title">Need for Speed™ Unbound</h1>
+        <div class="hero-price">
+          <span class="price-current">$59.99</span>
+          <span class="price-discount">-14%</span>
+          <span class="price-old">$69.99</span>
+        </div>
+        <div class="hero-actions">
+          <button class="hero-buy-btn">КУПИТЬ</button>
+          <button class="hero-cart-btn"><span>Корзину</span></button>
+          <div class="hero-like-btn">
+            <img src="icon/heart.svg" alt="Like" />
+          </div>
+        </div>
+        <div class="hero-details">
+          <div class="detail-item">
+            <span class="detail-label">Жанр:</span>
+            <span class="detail-value">Гонки</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Платформа:</span>
+            <span class="detail-value">PC, PS, Xbox</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Издатель:</span>
+            <span class="detail-value">EA Entertainment</span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">Дата выхода:</span>
+            <span class="detail-value">29.11.22г</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-top-buttons">
+        <div class="hero-btn-small share-btn">Поделиться</div>
+        <div class="hero-btn-small promo-btn">Промокод</div>
+      </div>
+      <div class="hero-gallery">
+        <div class="gallery-item video-thumbnail">
+          <img src="images/nfs1.jpg" alt="Trailer" />
+          <div class="play-icon"></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/nfs2.jpg" alt="Screenshot 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/nfs3.jpg" alt="Screenshot 3" />
+        </div>
+        <div class="gallery-item">
+          <img src="images/nfs4.jpg" alt="Screenshot 4" />
+        </div>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+    </div>
+    
+
+<section class="game-content-frame">
+      <div class="rec-tabs">
+        <div class="rec-tab active" id="tab-desc">Описание</div>
+        <div class="rec-tab" id="tab-req">Системные требования</div>
+        <div class="rec-tab" id="tab-rev">Отзывы</div>
+      </div>
+      <div class="game-sections-container">
+        <div id="content-desc" class="tab-content active">
+          <div class="game-description-section">
+            <h3 class="game-section-title">Об игре</h3>
+            <div class="description-container">
+              <p class="description-text">
+                Гонка со временем, перехитри копов и проходи еженедельные
+                отборочные заезды, чтобы добраться до The Grand — главного
+                уличного гоночного испытания Лейкшора. Заполняй свой гараж точно
+                настроенными кастомными машинами и зажигай улицы своим стилем:
+                эксклюзивные образы и яркий глобальный саундтрек звучат в каждом
+                уголке мира. Обновления игры выходят в формате Volumes — игра
+                постепенно движется к тому, чтобы впервые стать Ultimate NFS
+                Experience в одном месте.<br /><br />
+                VOL. 9: LOCKDOWN — живи на полной скорости вместе со своей
+                командой, взламывай локапы с использованием первого в истории
+                NFS мотоцикла и забирай горячие тачки внутри, а также встречай
+                полностью настраиваемые Subaru Impreza WRX STI ’99 и Honda
+                Integra Type R ’98.<br />
+                VOL. 8: COPS VS. RACERS — вернись к оригинальному драйву погони
+                с возвращением режима Hot Pursuit, полицейских технологий
+                преследования и новой системы прогресса копов, а также полностью
+                настраиваемых Porsche 959 S ’87 и Lotus Evija ’23.<br />
+                VOL. 7: DRIFT & DRAG — открой новые ощущения в классических
+                дисциплинах с возвращением режимов дрифт и дрэг, системы лиг и
+                появлением полностью настраиваемых Ford Mustang Dark Horse ’24 и
+                BMW M3 Competition Touring ’23.
+              </p>
+              <div class="fade-overlay"></div>
+            </div>
+            <div class="show-more-btn" id="description-more">
+              <span>Показать больше</span>
+              <img src="icon/down.svg" alt="Down" />
+            </div>
+          </div>
+        </div>
+        <div id="content-req" class="tab-content hidden">
+          <div class="game-description-section">
+            <h3 class="game-section-title">Системные требования</h3>
+            <div class="requirements-grid">
+              <div class="req-col">
+                <h4>Минимальные</h4>
+                <p>ОС: Windows 10 64-bit</p>
+                <p>Процессор: Ryzen 5 2600 / Core i5-8600</p>
+                <p>Оперативная память: 8 GB ОЗУ</p>
+                <p>Видеокарта: RX 570 / GTX 1050 Ti</p>
+              </div>
+              <div class="req-col">
+                <h4>Рекомендуемые</h4>
+                <p>ОС: Windows 10 64-bit</p>
+                <p>Процессор: Ryzen 7 5800X / Core i7-12700K</p>
+                <p>Оперативная память: 16 GB ОЗУ</p>
+                <p>Видеокарта: RTX 3070 / RX 6800</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="content-rev" class="tab-content hidden">
+          <div class="game-description-section">
+            <h3 class="game-section-title">Отзывы</h3>
+            <p style="color: #9aa3d9; font-size: 1.1vw">
+              Отзывов пока нет. Станьте первым!
+            </p>
+          </div>
+        </div>
+        <div class="dlc-section">
+          <h3 class="game-section-title">Дополнения</h3>
+          <div class="section-underline"></div>
+          <div class="dlc-cards-container">
+            <div class="dlc-card">
+              <div class="dlc-image-wrap">
+                <img
+                  src="images/nfs unbound_dlc.png"
+                  alt="NFS Unbound Standard"
+                />
+              </div>
+              <div class="dlc-content">
+                <h4 class="dlc-title">NFS Unbound</h4>
+                <div class="dlc-items-list">
+                  <div class="dlc-item active">
+                    <img src="icon/valid.svg" alt="check" class="item-icon" />
+                    <span>NFS Unbound</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                  <div class="dlc-item disabled">
+                    <img src="icon/x.svg" alt="x" class="item-icon" />
+                    <span>NFS Unbound Palace edition</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                  <div class="dlc-item disabled">
+                    <img src="icon/x.svg" alt="x" class="item-icon" />
+                    <span>NFS Unbound Ultimate collection</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                </div>
+                <div class="dlc-price-row">
+                  <span class="dlc-current-price">$59.99</span>
+                  <span class="dlc-discount">-25%</span>
+                  <span class="dlc-old-price">$69.99</span>
+                </div>
+                <div class="dlc-buttons">
+                  <button class="dlc-btn btn-cart">В корзину</button>
+                  <button class="dlc-btn btn-wishlist">В желаемое</button>
+                </div>
+              </div>
+            </div>
+            <div class="dlc-card">
+              <div class="dlc-image-wrap">
+                <img
+                  src="images/nfs unbound_dlc.png"
+                  alt="NFS Unbound Palace"
+                />
+              </div>
+              <div class="dlc-content">
+                <h4 class="dlc-title">NFS Unbound Palace</h4>
+                <div class="dlc-items-list">
+                  <div class="dlc-item active">
+                    <img src="icon/valid.svg" alt="check" class="item-icon" />
+                    <span>NFS Unbound</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                  <div class="dlc-item active">
+                    <img src="icon/valid.svg" alt="check" class="item-icon" />
+                    <span>NFS Unbound Palace edition</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                  <div class="dlc-item disabled">
+                    <img src="icon/x.svg" alt="x" class="item-icon" />
+                    <span>NFS Unbound Ultimate collection</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                </div>
+                <div class="dlc-price-row">
+                  <span class="dlc-current-price">$69.99</span>
+                  <span class="dlc-discount">-25%</span>
+                  <span class="dlc-old-price">$79.99</span>
+                </div>
+                <div class="dlc-buttons">
+                  <button class="dlc-btn btn-cart">В корзину</button>
+                  <button class="dlc-btn btn-wishlist">В желаемое</button>
+                </div>
+              </div>
+            </div>
+            <div class="dlc-card">
+              <div class="dlc-image-wrap">
+                <img
+                  src="images/nfs unbound_dlc.png"
+                  alt="NFS Unbound Ultimate"
+                />
+              </div>
+              <div class="dlc-content">
+                <h4 class="dlc-title">NFS Unbound Ult...</h4>
+                <div class="dlc-items-list">
+                  <div class="dlc-item active">
+                    <img src="icon/valid.svg" alt="check" class="item-icon" />
+                    <span>NFS Unbound</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                  <div class="dlc-item active">
+                    <img src="icon/valid.svg" alt="check" class="item-icon" />
+                    <span>NFS Unbound Palace edition</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                  <div class="dlc-item active">
+                    <img src="icon/valid.svg" alt="check" class="item-icon" />
+                    <span>NFS Unbound Ultimate collection</span>
+                  </div>
+                  <div class="dlc-item-divider"></div>
+                </div>
+                <div class="dlc-price-row">
+                  <span class="dlc-current-price">$79.99</span>
+                  <span class="dlc-discount">-25%</span>
+                  <span class="dlc-old-price">$89.99</span>
+                </div>
+                <div class="dlc-buttons">
+                  <button class="dlc-btn btn-cart">В корзину</button>
+                  <button class="dlc-btn btn-wishlist">В желаемое</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="interesting-section">
+          <h3 class="game-section-title">вам будет интересно</h3>
+          <div class="section-underline"></div>
+          <div class="rec-cards" style="margin-top: 1.39vw">
+            <div class="rec-card">
+              <div class="rec-card-header">
+                <span>Minecraft</span>
+                <img src="icon/heart.svg" alt="Heart" class="rec-heart" />
+              </div>
+              <div class="rec-card-image">
+                <img src="images/figama/minecraft_cardd.png" alt="Game" />
+              </div>
+              <div class="rec-card-footer">
+                <span class="rec-price">$29.99</span>
+                <span class="rec-discount">-25%</span>
+                <span class="rec-old-price">$39.99</span>
+              </div>
+            </div>
+            <div class="rec-card">
+              <div class="rec-card-header">
+                <span>Call of duty: Black Ops</span>
+                <img src="icon/heart.svg" alt="Heart" class="rec-heart" />
+              </div>
+              <div class="rec-card-image">
+                <img
+                  src="images/figama/call_of_duty_black_ops_subbanner.jpg"
+                  alt="Game"
+                />
+              </div>
+              <div class="rec-card-footer">
+                <span class="rec-price">$59.99</span>
+              </div>
+            </div>
+            <div class="rec-card">
+              <div class="rec-card-header">
+                <span>Apex Legends</span>
+                <img src="icon/heart.svg" alt="Heart" class="rec-heart" />
+              </div>
+              <div class="rec-card-image">
+                <img src="images/figama/apex_subbanner.png" alt="Game" />
+              </div>
+              <div class="rec-card-footer">
+                <span class="rec-price free">БЕСПЛАТНО</span>
+              </div>
+            </div>
+            <div class="rec-card">
+              <div class="rec-card-header">
+                <span>The Peak</span>
+                <img src="icon/heart.svg" alt="Heart" class="rec-heart" />
+              </div>
+              <div class="rec-card-image">
+                <img src="images/figama/peak_pc.png" alt="Game" />
+              </div>
+              <div class="rec-card-footer">
+                <span class="rec-price">$9.99</span>
+                <span class="rec-discount">-75%</span>
+                <span class="rec-old-price">$39.99</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+<section class="payment-systems-section reveal stagger-reveal">
+      <div class="payment-card">
+        <img src="images/uzcard.png" alt="Uzcard" />
+      </div>
+      <div class="payment-card">
+        <img src="images/Humo-01.png" alt="Humo" />
+      </div>
+      <div class="payment-card">
+        <img src="images/Visa_Inc.-Logo.wine.png" alt="Visa" />
+      </div>
+      <div class="payment-card">
+        <img src="images/Mastercard-Logo.wine.png" alt="Mastercard" />
+      </div>
+    </section>
+
+    
+<footer class="main-footer">
+      <ul class="footer-nav">
+        <li><a href="#">Активировать код</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Предложить игру</a></li>
+        <li><a href="#">Сообщество</a></li>
+      </ul>
+      <div class="footer-settings">
+        <div class="footer-setting">
+          <div class="setting-options">
+            <span>ENG</span>
+            <span class="active-setting">RUS</span>
+            <span>UZB</span>
+          </div>
+          <span class="setting-label">:Язык</span>
+        </div>
+        <div class="footer-setting">
+          <div class="setting-options">
+            <span class="active-setting">USD</span>
+            <span>UZS</span>
+          </div>
+          <span class="setting-label">:Валюта</span>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <ul class="footer-secondary-links">
+        <li><a href="#">Политика конфиденциальности</a></li>
+        <li><a href="#">Пользовательское соглашение</a></li>
+        <li><a href="#">Уведомление о cookie</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
     </footer>
 
+    <script src="js/api.js" defer></script>
     <script src="js/main.js" defer></script>
-</body>
+    <script src="js/game.js" defer></script>
+  </body>
 
 </html>

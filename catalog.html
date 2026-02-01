@@ -1,374 +1,381 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог игр</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/catalog.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Каталог игр</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/catalog.css" />
 </head>
 
 <body class="catalog-body">
-    <header>
-        <div class="logo">
-            <img src="images/figama/logo.png" alt="Logo">
+
+
+  <header>
+
+    <div class="logo">
+      <img src="images/figama/logo.png" alt="Logo" />
+    </div>
+
+    <div class="nav">
+      <ul class="ul_nav" style="list-style: none">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="#">Моя библиотека</a></li>
+        <li><a href="#">Подержка</a></li>
+      </ul>
+    </div>
+
+    <div class="reg">
+      <a href="#" class="auth-link login">Войти</a>
+      <div class="auth-separator"></div>
+      <a href="#" class="auth-link register">Регистрация</a>
+    </div>
+  </header>
+
+
+
+  <header class="second_head catalog-subnav">
+    <div class="subnav-left">
+      <h1 class="subnav-title">Каталог игр</h1>
+      <p class="subnav-subtitle">из 11708 игр всего</p>
+    </div>
+    <div class="subnav-right">
+      <div class="header-icons catalog-icons">
+        <img src="icon/free-button.svg" alt="Free" />
+        <img src="icon/basket-alt-3-light.svg" alt="Cart" />
+        <img src="icon/heart.svg" alt="Heart" />
+        <img src="icon/language.svg" alt="Language" />
+      </div>
+      <div class="search-panel mirrored">
+        <input type="text" class="search-input" placeholder="" />
+        <div class="search-icon-box">
+          <img src="icon/search.svg" alt="search" />
         </div>
-        <div class="nav">
-            <ul class="ul_nav" style="list-style: none;">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="#">Моя библиотека</a></li>
-                <li><a href="#">Подержка</a></li>
-            </ul>
+      </div>
+    </div>
+    <div class="subnav-divider"></div>
+  </header>
+
+  <main class="catalog-container">
+    <div class="catalog-filters">
+      <label class="hex-filter">
+        <input type="checkbox" />
+        <div class="hexagon"></div>
+        <span class="filter-text">Только игры со скидкой</span>
+      </label>
+      <label class="hex-filter">
+        <input type="checkbox" />
+        <div class="hexagon"></div>
+        <span class="filter-text">Предложение недели</span>
+      </label>
+      <label class="hex-filter">
+        <input type="checkbox" />
+        <div class="hexagon"></div>
+        <span class="filter-text">Спрятать DLC и дополнение</span>
+      </label>
+      <label class="hex-filter">
+        <input type="checkbox" />
+        <div class="hexagon"></div>
+        <span class="filter-text">Бесплатно</span>
+      </label>
+      <div class="price-filter">
+        <h3 class="price-title">ЦЕНА $</h3>
+        <div class="price-inputs">
+          <div class="price-field">
+            <span class="price-label">от</span>
+            <input type="number" class="price-input" />
+          </div>
+          <div class="price-divider"></div>
+          <div class="price-field">
+            <span class="price-label">до</span>
+            <input type="number" class="price-input" />
+          </div>
         </div>
-        <div class="reg">
-            <a href="#" class="auth-link login">Войти</a>
-            <div class="auth-separator"></div>
-            <a href="#" class="auth-link register">Регистрация</a>
+        <div class="price-slider-visual">
+          <div class="slider-line">
+            <div class="slider-handle left"></div>
+            <div class="slider-handle right"></div>
+          </div>
+          <div class="slider-labels">
+            <span>5</span>
+            <span>10</span>
+            <span>25</span>
+            <span>45</span>
+            <span>75</span>
+            <span>100</span>
+          </div>
         </div>
-    </header>
-    <header class="second_head catalog-subnav">
-        <div class="subnav-left">
-            <h1 class="subnav-title">Каталог игр</h1>
-            <p class="subnav-subtitle">из 11708 игр всего</p>
+      </div>
+      <div class="filter-group platform-group">
+        <div class="platform-dropdown">
+          <span class="platform-text">Платформа</span>
         </div>
-        <div class="subnav-right">
-            <div class="header-icons catalog-icons">
-                <img src="icon/free-button.svg" alt="Free">
-                <img src="icon/basket-alt-3-light.svg" alt="Cart">
-                <img src="icon/heart.svg" alt="Heart">
-                <img src="icon/language.svg" alt="Language">
-            </div>
-            <div class="search-panel mirrored">
-                <input type="text" class="search-input" placeholder="">
-                <div class="search-icon-box">
-                    <img src="icon/search.svg" alt="search">
-                </div>
-            </div>
+        <div class="platform-list">
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">PC</span>
+          </label>
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">PlayStation</span>
+          </label>
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Xbox</span>
+          </label>
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Android</span>
+          </label>
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Apple</span>
+          </label>
         </div>
-        <div class="subnav-divider"></div>
-    </header>
-
-    <main class="catalog-container">
-        <div class="catalog-filters">
-            <label class="hex-filter">
-                <input type="checkbox">
-                <div class="hexagon"></div>
-                <span class="filter-text">Только игры со скидкой</span>
-            </label>
-            <label class="hex-filter">
-                <input type="checkbox">
-                <div class="hexagon"></div>
-                <span class="filter-text">Предложение недели</span>
-            </label>
-            <label class="hex-filter">
-                <input type="checkbox">
-                <div class="hexagon"></div>
-                <span class="filter-text">Спрятать DLC и дополнение</span>
-            </label>
-            <label class="hex-filter">
-                <input type="checkbox">
-                <div class="hexagon"></div>
-                <span class="filter-text">Бесплатно</span>
-            </label>
-
-            <div class="price-filter">
-                <h3 class="price-title">ЦЕНА $</h3>
-                <div class="price-inputs">
-                    <div class="price-field">
-                        <span class="price-label">от</span>
-                        <input type="number" class="price-input">
-                    </div>
-                    <div class="price-divider"></div>
-                    <div class="price-field">
-                        <span class="price-label">до</span>
-                        <input type="number" class="price-input">
-                    </div>
-                </div>
-                <!-- Slider Visual -->
-                <div class="price-slider-visual">
-                    <div class="slider-line">
-                        <div class="slider-handle left"></div>
-                        <div class="slider-handle right"></div>
-                    </div>
-                    <div class="slider-labels">
-                        <span>5</span>
-                        <span>10</span>
-                        <span>25</span>
-                        <span>45</span>
-                        <span>75</span>
-                        <span>100</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Platform Filter -->
-            <div class="filter-group platform-group">
-                <div class="platform-dropdown">
-                    <span class="platform-text">Платформа</span>
-                </div>
-                <!-- Sliding Options Block -->
-                <div class="platform-list">
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">PC</span>
-                    </label>
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">PlayStation</span>
-                    </label>
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">Xbox</span>
-                    </label>
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">Android</span>
-                    </label>
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">Apple</span>
-                    </label>
-                </div>
-            </div>
-
-            <!-- Release Status Filter -->
-            <div class="filter-group platform-group">
-                <div class="platform-dropdown">
-                    <span class="platform-text">Статус релиза</span>
-                </div>
-                <div class="platform-list">
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">Новинка</span>
-                    </label>
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">Ожидаемое</span>
-                    </label>
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div>
-                        <span class="option-text">Ранний доступ</span>
-                    </label>
-                </div>
-            </div>
-
-            <!-- Genres Filter -->
-            <div class="filter-group platform-group">
-                <div class="platform-dropdown">
-                    <span class="platform-text">Жанры</span>
-                </div>
-                <div class="platform-list">
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Открытый мир</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Экшен</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">RPG</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Шутеры</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Стратегия</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Приключения</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Симуляторы</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Инди</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Хоррор</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Казуальные</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Спортивные</span>
-                    </label>
-                    <label class="platform-option">
-                        <input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Гонки</span>
-                    </label>
-                </div>
-            </div>
-
-            <!-- Multiplayer Filter -->
-            <div class="filter-group platform-group">
-                <div class="platform-dropdown">
-                    <span class="platform-text">Мультиплеер</span>
-                </div>
-                <div class="platform-list">
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Одиночная игра</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Онлайн-мультиплеер</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Онлайн-кооператив</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Локальный кооператив</span>
-                    </label>
-                    <label class="platform-option"><input type="checkbox">
-                        <div class="hexagon"></div><span class="option-text">Кроссплатформенный мультиплеер</span>
-                    </label>
-                </div>
-            </div>
-
-            <!-- Rating Filter -->
-            <div class="rating-filter">
-                <h3 class="rating-title">Рейтинг</h3>
-                <div class="rating-stars">
-                    <img src="icon/star.svg" alt="star" class="star" data-value="1">
-                    <img src="icon/star.svg" alt="star" class="star" data-value="2">
-                    <img src="icon/star.svg" alt="star" class="star" data-value="3">
-                    <img src="icon/star.svg" alt="star" class="star" data-value="4">
-                    <img src="icon/star.svg" alt="star" class="star" data-value="5">
-                </div>
-                <span class="rating-text">Любой рейтинг</span>
-            </div>
+      </div>
+      <div class="filter-group platform-group">
+        <div class="platform-dropdown">
+          <span class="platform-text">Статус релиза</span>
         </div>
-        <div class="catalog-games">
-            <div class="catalog-sort-header">
-                <!-- Pagination on Left -->
-                <div class="catalog-pagination">
-                    <button class="page-arrow">◀</button>
-                    <div class="page-input-wrapper">
-                        <input type="text" class="page-input" value="1">
-                    </div>
-                    <span class="page-total">из 209</span>
-                    <button class="page-arrow">▶</button>
-                </div>
-
-                <!-- Reset Filters Button -->
-                <button class="catalog-reset-btn">
-                    <span class="reset-text">Сбросить все фильтры</span>
-                    <div class="reset-icon-wrapper">
-                        <img src="icon/x.svg" class="reset-icon" alt="reset">
-                    </div>
-                </button>
-
-                <!-- Sort & View on Right -->
-                <div class="sort-controls-right">
-                    <span class="sort-label">Сортировать по:</span>
-                    <div class="sort-dropdown-trigger">
-                        <span class="sort-value">Бестселлеры</span>
-                        <img src="icon/down.svg" class="sort-icon" alt="expand">
-                        <div class="sort-dropdown-list">
-                            <div class="sort-option active" data-value="bestsellers">Бестселлеры</div>
-                            <div class="sort-option" data-value="price-low">Цена: по возрастанию</div>
-                            <div class="sort-option" data-value="price-high">Цена: по убыванию</div>
-                            <div class="sort-option" data-value="rating">Рейтинг</div>
-                        </div>
-                    </div>
-
-                    <div class="view-switchers">
-                        <img src="icon/row-triple-24-filled.svg" class="view-icon" alt="list view">
-                        <img src="icon/column-triple-24-filled.svg" class="view-icon active" alt="grid view">
-                    </div>
-                </div>
-            </div> <!-- End of .catalog-sort-header -->
-
-            <!-- Active Filters Row -->
-            <div class="active-filters-row">
-                <!-- This will be populated dynamically, but keeping one for styling reference -->
-                <div class="filter-tag">
-                    <span class="tag-label">Платформа:</span>
-                    <span class="tag-value">PC</span>
-                    <div class="tag-close-wrapper">
-                        <img src="icon/x.svg" class="tag-close-icon" alt="remove">
-                    </div>
-                </div>
+        <div class="platform-list">
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Новинка</span>
+          </label>
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Ожидаемое</span>
+          </label>
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Ранний доступ</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-group platform-group">
+        <div class="platform-dropdown">
+          <span class="platform-text">Жанры</span>
+        </div>
+        <div class="platform-list">
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Открытый мир</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Экшен</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">RPG</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Шутеры</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Стратегия</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Приключения</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Симуляторы</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Инди</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Хоррор</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Казуальные</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Спортивные</span>
+          </label>
+          <label class="platform-option">
+            <input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Гонки</span>
+          </label>
+        </div>
+      </div>
+      <div class="filter-group platform-group">
+        <div class="platform-dropdown">
+          <span class="platform-text">Мультиплеер</span>
+        </div>
+        <div class="platform-list">
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Одиночная игра</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Онлайн-мультиплеер</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Онлайн-кооператив</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Локальный кооператив</span>
+          </label>
+          <label class="platform-option"><input type="checkbox" />
+            <div class="hexagon"></div>
+            <span class="option-text">Кроссплатформенный мультиплеер</span>
+          </label>
+        </div>
+      </div>
+      <div class="rating-filter">
+        <h3 class="rating-title">Рейтинг</h3>
+        <div class="rating-stars">
+          <img src="icon/star.svg" alt="star" class="star" data-value="1" />
+          <img src="icon/star.svg" alt="star" class="star" data-value="2" />
+          <img src="icon/star.svg" alt="star" class="star" data-value="3" />
+          <img src="icon/star.svg" alt="star" class="star" data-value="4" />
+          <img src="icon/star.svg" alt="star" class="star" data-value="5" />
+        </div>
+        <span class="rating-text">Любой рейтинг</span>
+      </div>
+    </div>
+    <div class="catalog-games">
+      <div class="catalog-sort-header">
+        <div class="catalog-pagination">
+          <button class="page-arrow">◀</button>
+          <div class="page-input-wrapper">
+            <input type="text" class="page-input" value="1" />
+          </div>
+          <span class="page-total">из 209</span>
+          <button class="page-arrow">▶</button>
+        </div>
+        <button class="catalog-reset-btn">
+          <span class="reset-text">Сбросить все фильтры</span>
+          <div class="reset-icon-wrapper">
+            <img src="icon/x.svg" class="reset-icon" alt="reset" />
+          </div>
+        </button>
+        <div class="sort-controls-right">
+          <span class="sort-label">Сортировать по:</span>
+          <div class="sort-dropdown-trigger">
+            <span class="sort-value">Бестселлеры</span>
+            <img src="icon/down.svg" class="sort-icon" alt="expand" />
+            <div class="sort-dropdown-list">
+              <div class="sort-option active" data-value="bestsellers">
+                Бестселлеры
+              </div>
+              <div class="sort-option" data-value="price-low">
+                Цена: по возрастанию
+              </div>
+              <div class="sort-option" data-value="price-high">
+                Цена: по убыванию
+              </div>
+              <div class="sort-option" data-value="rating">Рейтинг</div>
             </div>
+          </div>
+          <div class="view-switchers">
+            <img src="icon/row-triple-24-filled.svg" class="view-icon" alt="list view" />
+            <img src="icon/column-triple-24-filled.svg" class="view-icon active" alt="grid view" />
+          </div>
+        </div>
+      </div>
+      <div class="active-filters-row">
+        <div class="filter-tag">
+          <span class="tag-label">Платформа:</span>
+          <span class="tag-value">PC</span>
+          <div class="tag-close-wrapper">
+            <img src="icon/x.svg" class="tag-close-icon" alt="remove" />
+          </div>
+        </div>
+      </div>
+      <div class="games-grid"></div>
+      <div class="catalog-bottom-pagination">
+        <button class="page-arrow prev">◀</button>
+        <div class="pages-list">
+          <span class="page-num active">1</span>
+          <span class="page-num">2</span>
+          <span class="page-num">3</span>
+          <span class="page-num">4</span>
+          <span class="page-num">5</span>
+          <span class="page-dots">...</span>
+          <span class="page-num">209</span>
+        </div>
+        <button class="page-arrow next">▶</button>
+      </div>
+    </div>
+  </main>
 
-            <!-- Grid for games will be added here -->
-            <div class="games-grid"></div>
 
-            <!-- Bottom Pagination -->
-            <div class="catalog-bottom-pagination">
-                <button class="page-arrow prev">◀</button>
-                <div class="pages-list">
-                    <span class="page-num active">1</span>
-                    <span class="page-num">2</span>
-                    <span class="page-num">3</span>
-                    <span class="page-num">4</span>
-                    <span class="page-num">5</span>
-                    <span class="page-dots">...</span>
-                    <span class="page-num">209</span>
-                </div>
-                <button class="page-arrow next">▶</button>
-            </div>
-        </div>
-    </main>
+  <section class="payment-systems-section">
+    <div class="payment-card">
+      <img src="images/uzcard.png" alt="Uzcard" />
+    </div>
+    <div class="payment-card">
+      <img src="images/Humo-01.png" alt="Humo" />
+    </div>
+    <div class="payment-card">
+      <img src="images/Visa_Inc.-Logo.wine.png" alt="Visa" />
+    </div>
+    <div class="payment-card">
+      <img src="images/Mastercard-Logo.wine.png" alt="Mastercard" />
+    </div>
+  </section>
 
-    <section class="payment-systems-section">
-        <div class="payment-card">
-            <img src="images/uzcard.png" alt="Uzcard">
-        </div>
-        <div class="payment-card">
-            <img src="images/Humo-01.png" alt="Humo">
-        </div>
-        <div class="payment-card">
-            <img src="images/Visa_Inc.-Logo.wine.png" alt="Visa">
-        </div>
-        <div class="payment-card">
-            <img src="images/Mastercard-Logo.wine.png" alt="Mastercard">
-        </div>
-    </section>
 
-    <footer class="main-footer">
-        <ul class="footer-nav">
-            <li><a href="#">Активировать код</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="#">Предложить игру</a></li>
-            <li><a href="#">Сообщество</a></li>
-        </ul>
-        <div class="footer-settings">
-            <div class="footer-setting">
-                <div class="setting-options">
-                    <span>ENG</span>
-                    <span class="active-setting">RUS</span>
-                    <span>UZB</span>
-                </div>
-                <span class="setting-label">:Язык</span>
-            </div>
-            <div class="footer-setting">
-                <div class="setting-options">
-                    <span class="active-setting">USD</span>
-                    <span>UZS</span>
-                </div>
-                <span class="setting-label">:Валюта</span>
-            </div>
+  <footer class="main-footer">
+    <ul class="footer-nav">
+      <li><a href="#">Активировать код</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">Предложить игру</a></li>
+      <li><a href="#">Сообщество</a></li>
+    </ul>
+    <div class="footer-settings">
+      <div class="footer-setting">
+        <div class="setting-options">
+          <span>ENG</span>
+          <span class="active-setting">RUS</span>
+          <span>UZB</span>
         </div>
-        <div class="footer-line"></div>
-        <ul class="footer-secondary-links">
-            <li><a href="#">Политика конфиденциальности</a></li>
-            <li><a href="#">Пользовательское соглашение</a></li>
-            <li><a href="#">Уведомление о cookie</a></li>
-            <li><a href="#">FAQ</a></li>
-        </ul>
-    </footer>
+        <span class="setting-label">:Язык</span>
+      </div>
+      <div class="footer-setting">
+        <div class="setting-options">
+          <span class="active-setting">USD</span>
+          <span>UZS</span>
+        </div>
+        <span class="setting-label">:Валюта</span>
+      </div>
+    </div>
+    <div class="footer-line"></div>
+    <ul class="footer-secondary-links">
+      <li><a href="#">Политика конфиденциальности</a></li>
+      <li><a href="#">Пользовательское соглашение</a></li>
+      <li><a href="#">Уведомление о cookie</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </footer>
 
-    <script src="js/api.js" defer></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/catalog.js" defer></script>
+  <script src="js/api.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/catalog.js" defer></script>
 </body>
 
 </html>
