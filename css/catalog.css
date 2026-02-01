@@ -1,0 +1,1241 @@
+/* Catalog Page Styles */
+
+body.catalog-body {
+    padding-top: 11.14vw !important;
+    background-color: #1F2246 !important;
+    /* Fix white background issue */
+}
+
+.catalog-subnav {
+    height: 6.94vw !important;
+    background-color: #303472 !important;
+    display: flex;
+    align-items: flex-start;
+    padding: 0 var(--side-padding) !important;
+    position: fixed;
+    top: 4.2vw;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    overflow: visible;
+}
+
+.subnav-left {
+    padding-top: 1.39vw;
+}
+
+.subnav-title {
+    font-size: 1.67vw;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 0.2vw;
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.5);
+}
+
+.subnav-subtitle {
+    font-size: 1.04vw;
+    color: #9AA3D9;
+    text-shadow: 0 0 0.3vw rgba(154, 163, 217, 0.3);
+}
+
+.subnav-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 13.125vw;
+    bottom: 2.85vw;
+}
+
+.search-panel.mirrored {
+    display: flex;
+    align-items: center;
+    width: 21.3vw;
+    height: 1.7vw;
+    background-color: #444E8A;
+    border: 0.2vw solid #6B5EEA;
+    border-radius: 0.35vw;
+    transform: skewX(-15deg) !important;
+    margin: 0 !important;
+    margin-left: 2.125vw !important;
+    filter: drop-shadow(0px 0px 0.28vw rgba(255, 255, 255, 0.3));
+}
+
+.search-panel.mirrored .search-input {
+    flex-grow: 1;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1vw;
+    padding-left: 0.7vw;
+    transform: skewX(15deg);
+}
+
+.search-panel.mirrored .search-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 3.1vw;
+    border-left: 0.2vw solid #6B5EEA;
+}
+
+.search-panel.mirrored .search-icon-box img {
+    padding-left: 0.7vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    transform: skewX(15deg) scaleX(-1);
+    filter: drop-shadow(0px 0px 0.28vw rgba(255, 255, 255, 0.2));
+}
+
+.search-panel.mirrored .search-icon-box::before {
+    content: '';
+    position: absolute;
+    left: 19.6vw;
+    width: 1.25vw;
+    height: 0.2vw;
+    background-color: #6B5EEA;
+    opacity: 1;
+    z-index: 1;
+}
+
+.catalog-icons {
+    margin: 0 !important;
+    display: flex;
+    gap: 1.39vw !important;
+    align-items: center;
+}
+
+.catalog-icons img {
+    height: 1.82vw;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0px 0px 0.28vw rgba(255, 255, 255, 0.3));
+}
+
+.catalog-icons img:hover {
+    transform: scale(1.1);
+}
+
+.subnav-divider {
+    position: absolute;
+    bottom: 0.76vw;
+    right: 10%;
+    width: 80%;
+    height: 0.21vw;
+    background-color: #444E8A;
+    border-radius: 0.21vw 0 0 0.21vw;
+    transform: scaleX(-1);
+}
+
+.catalog-container {
+    width: 100%;
+    min-height: 125.42vw;
+    background-color: #2C2F5B;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.catalog-filters {
+    width: 22.36vw;
+    /* 322px */
+    /* Fixed height issues for sticky */
+    height: fit-content;
+    max-height: calc(100vh - 14vw);
+    overflow-y: auto;
+    scrollbar-width: none;
+    /* Firefox */
+
+    margin-left: 10vw;
+    background-color: #2C2F5B;
+
+    /* Sticky positioning */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 12.5vw;
+    align-self: flex-start;
+}
+
+/* Hide scrollbar for Chrome/Safari */
+.catalog-filters::-webkit-scrollbar {
+    display: none;
+}
+
+.hex-filter {
+    display: flex;
+    align-items: center;
+    margin-top: 1.39vw;
+    margin-left: 2.36vw;
+    cursor: pointer;
+}
+
+.hex-filter input {
+    display: none;
+}
+
+.hexagon {
+    width: 1.39vw;
+    height: 1.39vw;
+    background-image: url('../icon/hexagon-20-regular.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.35vw;
+    transition: all 0.2s ease;
+    filter: drop-shadow(0 0 0.35vw rgba(107, 94, 234, 0.6));
+}
+
+.hex-filter input:checked+.hexagon {
+    background-image: url('../icon/hexagon-20-filled.svg');
+    filter: drop-shadow(0 0 0.35vw rgba(107, 94, 234, 0.6));
+}
+
+.filter-text {
+    font-size: 1.11vw;
+    color: #fff;
+    font-weight: 500;
+}
+
+.price-filter {
+    margin-top: 1.53vw;
+    /* 22px */
+}
+
+.price-title {
+    font-size: 1.39vw;
+    /* 20px */
+    color: #fff;
+    margin-left: 2.36vw;
+    /* 34px - align with filters */
+    margin-bottom: 1.46vw;
+    /* 21px to inputs */
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.4);
+}
+
+.price-inputs {
+    width: 14.58vw;
+    /* 210px */
+    height: 2.99vw;
+    /* 43px */
+    border: 0.21vw solid #444E8A;
+    /* 3px */
+    border-radius: 0.69vw;
+    /* 10px */
+    margin: 0 3.89vw;
+    /* 56px side margins */
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.5vw rgba(68, 78, 138, 0.5);
+    /* Glowing border effect */
+}
+
+.price-divider {
+    width: 0.21vw;
+    /* 3px */
+    height: 100%;
+    background-color: #444E8A;
+}
+
+.price-field {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 0.5vw;
+    transition: all 0.3s ease;
+}
+
+.price-field:focus-within .price-label {
+    color: #fff;
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.6);
+}
+
+.price-label {
+    font-size: 0.83vw;
+    /* 12px */
+    color: #444E8A;
+    margin-right: 0.3vw;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.price-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1vw;
+    outline: none;
+    text-align: center;
+    transition: text-shadow 0.3s ease;
+}
+
+.price-input:focus {
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.4);
+}
+
+
+/* Remove arrows from number input */
+.price-input::-webkit-outer-spin-button,
+.price-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.price-slider-visual {
+    width: 14.58vw;
+    margin: -0.15vw auto 0;
+    /* Pull up to sit exactly on the bottom border (approx -2px) */
+    position: relative;
+    z-index: 2;
+}
+
+.slider-line {
+    width: 12.5vw;
+    /* 180px */
+    height: 0.21vw;
+    /* 3px */
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 0.1vw;
+}
+
+.slider-handle {
+    width: 0.83vw;
+    /* 12px */
+    height: 0.83vw;
+    /* 12px */
+    background-color: #9C52FF;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: 0 0 0.3vw rgba(156, 82, 255, 0.5);
+}
+
+.slider-handle.left {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.slider-handle.right {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.7vw;
+    /* Spacing from line */
+    width: 12.5vw;
+    /* Match line width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-labels span {
+    color: #444E8A;
+    font-size: 0.83vw;
+    /* 12px */
+    font-weight: 500;
+}
+
+/* Platform Filter */
+.platform-group {
+    margin-top: 1.53vw;
+    /* 22px from tiny text below price */
+}
+
+/* Dropdown container is the rectangle */
+.platform-dropdown {
+    width: 17.36vw;
+    /* 250px */
+    height: 1.8vw;
+    /* 26px */
+    margin-left: 2.15vw;
+    /* 31px */
+    border-radius: 0.69vw;
+    /* 10px */
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.platform-dropdown:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 0.3vw rgba(156, 82, 255, 0.3);
+}
+
+.platform-text {
+    font-size: 1.39vw;
+    /* 20px */
+    color: #fff;
+    margin-left: 0.5vw;
+    /* Slight padding from left edge if needed, or 0 */
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.4);
+    pointer-events: none;
+    /* Let clicks pass to container */
+}
+
+.platform-dropdown::after {
+    content: '';
+    position: absolute;
+    right: 1vw;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1vw;
+    height: 1vw;
+    background-image: url('../icon/down.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1);
+    /* Make it white */
+}
+
+/* Active state for dropdown */
+/* Active state for dropdown: merging with list */
+.platform-dropdown.active {
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
+    /* Bottom shadow */
+}
+
+.platform-dropdown.active::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/* Sliding List */
+.platform-list {
+    width: 17.36vw;
+    /* 250px */
+    margin-left: 2.15vw;
+    /* 31px */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, box-shadow 0.3s ease;
+    background-color: rgba(68, 78, 138, 0.3);
+    /* Slight tint background */
+    border-radius: 0 0 0.69vw 0.69vw;
+}
+
+.platform-group.open .platform-list {
+    max-height: 50vw;
+    /* Increased significantly to allow long lists to open fully */
+    box-shadow: 0 4px 4px rgba(255, 255, 255, 0.25);
+    /* Shadow moves to bottom */
+}
+
+/* Option Styles */
+.platform-option {
+    display: flex;
+    align-items: center;
+    padding: 0.4vw 1vw;
+    /* Adjusted padding */
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.platform-option:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.platform-option input {
+    display: none;
+}
+
+.option-text {
+    font-size: 1vw;
+    color: #9AA3D9;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    white-space: normal;
+    /* Allow wrapping */
+    line-height: 1.2;
+}
+
+/* Hexagon in list - reusing/overriding global .hexagon if needed, but should work */
+/* We need to ensure the checked state works for these specifically if the global selector was .hex-filter ... */
+
+.platform-option input:checked+.hexagon {
+    background-image: url('../icon/hexagon-20-filled.svg');
+    filter: drop-shadow(0 0 0.35vw rgba(107, 94, 234, 0.6));
+    background-color: transparent;
+}
+
+.platform-option input:checked~.option-text {
+    color: #fff;
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.6);
+}
+
+/* Rating Filter */
+.rating-filter {
+    margin-top: 1.53vw;
+    /* 22px */
+    margin-left: 2.36vw;
+    /* 34px - align with other headers */
+    margin-bottom: 2vw;
+    /* Bottom spacing */
+}
+
+.rating-title {
+    font-size: 1.39vw;
+    /* 20px */
+    color: #fff;
+    margin-bottom: 0.7vw;
+    text-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.4);
+}
+
+.rating-stars {
+    display: flex;
+    gap: 0.2vw;
+    margin-bottom: 0.7vw;
+}
+
+.star {
+    width: 1.39vw;
+    /* 20px */
+    height: 1.39vw;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.star.filled {
+    /* Purple Filter for #9C52FF */
+    filter: invert(39%) sepia(87%) saturate(3065%) hue-rotate(249deg) brightness(98%) contrast(104%) drop-shadow(0 0 2px rgba(156, 82, 255, 0.5));
+}
+
+.star:not(.filled) {
+    /* Make outline white/gray */
+    filter: brightness(0) invert(0.7);
+    /* Light gray */
+}
+
+.rating-text {
+    font-size: 1.11vw;
+    /* 16px */
+    color: #fff;
+    font-weight: 500;
+}
+
+/* Catalog Content Area */
+.catalog-games {
+    width: 57.64vw;
+    /* 830px */
+    margin-left: 2.15vw;
+    /* Gap between sidebar and content */
+    /* background-color: rgba(255,0,0,0.1); Debug: see area */
+}
+
+.catalog-sort-header {
+    width: 100%;
+    /* Ensure full width for spacing to work */
+    display: flex;
+    justify-content: flex-start;
+    /* Align items to start, push right group manually */
+    align-items: center;
+    margin-top: 0.69vw;
+    /* 10px */
+    /* margin-right removed or handled by padding/width logic, but keeping as requested if needed, though width 100% might conflict if margin-right is set causing overflow. Let's keep margin-right but handle width carefully or subtraction. Actually, margin-right on a full-width block inside a fixed width parent is fine if visual. Let's just say width: 100% might be safer as just letting it fill. */
+    /* margin-right: 4.37vw; REMOVED to prevent overflow with width 100%, we use padding or child margins if needed. The user wanted margin-right 63px for alignment. I'll move that to padding-right or margin on the right child. */
+    padding-right: 4.37vw;
+    /* 63px right spacing */
+    font-size: 1.11vw;
+    /* 16px */
+    font-weight: 500;
+}
+
+.sort-controls-right {
+    margin-left: auto;
+    /* Push to right */
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.sort-label {
+    color: #fff;
+    white-space: nowrap;
+    /* Prevent wrapping */
+    margin-right: 0.5vw;
+}
+
+.sort-dropdown-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    cursor: pointer;
+}
+
+.sort-value {
+    color: #9C52FF;
+}
+
+.sort-icon {
+    width: 0.8vw;
+    height: 0.8vw;
+    /* Filter to make it #9C52FF */
+    filter: invert(39%) sepia(87%) saturate(3065%) hue-rotate(249deg) brightness(98%) contrast(104%);
+    transition: transform 0.3s ease;
+}
+
+.sort-dropdown-trigger:hover .sort-icon {
+    transform: translateY(2px);
+}
+
+.view-switchers {
+    display: flex;
+    align-items: center;
+    gap: 0.69vw;
+    /* 10px */
+    margin-left: 1vw;
+    /* Reduced from 2.08vw to move sort text right */
+    padding-left: 1vw;
+    border-left: 1px solid #444E8A;
+    /* Optional divider */
+    height: 1.5vw;
+}
+
+.view-icon {
+    width: 1.67vw;
+    /* 24px */
+    height: 1.67vw;
+    cursor: pointer;
+    transition: filter 0.3s ease, transform 0.2s ease;
+    filter: brightness(0) invert(1);
+    /* Default White */
+    opacity: 0.5;
+}
+
+.view-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.view-icon.active {
+    opacity: 1;
+    /* Purple Filter for #9C52FF */
+    filter: invert(39%) sepia(87%) saturate(3065%) hue-rotate(249deg) brightness(98%) contrast(104%);
+}
+
+/* Pagination Control */
+.catalog-pagination {
+    width: 9.65vw;
+    /* 139px */
+    height: 1.94vw;
+    /* 28px */
+    background-color: #444E8A;
+    margin-left: 0;
+    /* Removed margin to move left */
+    /* margin-top: 0.42vw;  Removed manual top margin, flex center handles layout better */
+    border-radius: 1.39vw;
+    /* 20px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5vw;
+    color: #fff;
+    font-size: 0.9vw;
+}
+
+.page-arrow {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.25vw;
+    /* Increased from 0.8vw */
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+.page-arrow:hover {
+    opacity: 0.7;
+}
+
+.page-input {
+    width: 2vw;
+    /* Fit number */
+    height: 1.4vw;
+    background: transparent;
+    border: 0.1vw solid #9C52FF;
+    /* Requested color */
+    border-radius: 0.21vw;
+    /* 3px requested */
+    color: #fff;
+    text-align: center;
+    font-size: 0.9vw;
+    outline: none;
+}
+
+.page-total {
+    color: #fff;
+    font-weight: 500;
+    margin: 0 0.3vw;
+}
+
+.catalog-reset-btn {
+    width: 16.25vw;
+    /* 234px */
+    height: 1.94vw;
+    /* 28px */
+    background-color: #444E8A;
+    border-radius: 1.39vw;
+    /* 20px */
+    border: none;
+    margin-left: 1.11vw;
+    /* 16px */
+    padding: 0;
+    /* Removing padding since fixed width, center content */
+    display: flex;
+    justify-content: center;
+    /* Center content in fixed width */
+    align-items: center;
+    gap: 0.5vw;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.catalog-reset-btn:hover {
+    background-color: rgba(68, 78, 138, 0.8);
+}
+
+.reset-text {
+    color: #8AB3FF;
+    font-size: 1.11vw;
+    /* 16px */
+    font-weight: 500;
+}
+
+.reset-icon-wrapper {
+    width: 1.18vw;
+    /* 17px */
+    height: 1.18vw;
+    background-color: #FF6B6B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-icon {
+    width: 0.6vw;
+    /* Internal X size */
+    height: 0.6vw;
+    filter: brightness(0) invert(1);
+    /* White X */
+    object-fit: contain;
+}
+
+/* Active Filters Tags */
+.active-filters-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8vw;
+    margin-top: 0.9vw;
+    /* 13px */
+    width: 100%;
+}
+
+.filter-tag {
+    height: 1.94vw;
+    /* 28px */
+    background-color: #444E8A;
+    border-radius: 1.39vw;
+    /* 20px */
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+    gap: 0.4vw;
+    font-size: 0.97vw;
+    /* ~14px */
+    font-weight: 500;
+}
+
+.tag-label {
+    color: #fff;
+}
+
+.tag-value {
+    color: #9C52FF;
+}
+
+.tag-close-wrapper {
+    width: 0.8vw;
+    /* Slightly smaller than reset btn icon for tags */
+    height: 0.8vw;
+    background-color: #FF6B6B;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 0.3vw;
+    transition: transform 0.2s;
+}
+
+.tag-close-wrapper:hover {
+    transform: scale(1.1);
+}
+
+.tag-close-icon {
+    width: 0.4vw;
+    height: 0.4vw;
+    filter: brightness(0) invert(1);
+    /* White X */
+    object-fit: contain;
+}
+
+/* Games Grid Layout */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.39vw;
+    /* 20px */
+    margin-top: 0.9vw;
+    /* 13px below active filters */
+    width: 100%;
+    padding-bottom: 5vw;
+}
+
+.catalog-game-card {
+    width: 100%;
+    /* Fill grid column */
+    height: 21.53vw;
+    border-radius: 0.7vw;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-game-card:hover {
+    transform: translateY(-0.5vw);
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.3);
+}
+
+/* Reusing .rec-card nomenclature or adapting to catalog context */
+.cat-card-header {
+    height: 2.78vw;
+    background: linear-gradient(135deg, #9C52FF 0%, #6155D3 20%, #3C3584 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1vw;
+}
+
+.cat-card-header span {
+    color: #fff;
+    font-size: 1.1vw;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
+
+.cat-card-heart {
+    width: 1.1vw;
+    height: 1.1vw;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    filter: brightness(0) invert(1);
+}
+
+.cat-card-heart:hover {
+    transform: scale(1.2);
+}
+
+.cat-card-heart.liked {
+    filter: invert(27%) sepia(82%) saturate(7444%) hue-rotate(354deg) brightness(97%) contrast(105%);
+}
+
+.cat-card-image {
+    height: 15.97vw;
+    width: 100%;
+    overflow: hidden;
+}
+
+.cat-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.catalog-game-card:hover .cat-card-image img {
+    transform: scale(1.05);
+}
+
+.cat-card-footer {
+    height: 2.78vw;
+    background: linear-gradient(135deg, #9C52FF 0%, #6155D3 20%, #3C3584 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1vw;
+    gap: 0.7vw;
+}
+
+.cat-price {
+    color: #fff;
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+.cat-discount {
+    color: #2ED573;
+    font-size: 1.18vw;
+    font-weight: bold;
+}
+
+.cat-old-price {
+    color: #9AA3D9;
+    font-size: 0.97vw;
+    text-decoration: line-through;
+}
+
+.cat-price.free {
+    color: #2ED573;
+}
+
+/* List View (Horizontal) Styles - EXACT copy of main.css .game-card precisely */
+.games-grid.list-view {
+    grid-template-columns: 1fr;
+    /* Single column as requested */
+    gap: 1.39vw;
+}
+
+.catalog-game-card-wide {
+    width: 100%;
+    /* Fill the row width */
+    height: 10.07vw;
+    background-color: #444E8A;
+    border-radius: 0.7vw;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.catalog-game-card-wide:hover {
+    transform: translateX(0.35vw);
+}
+
+.catalog-game-card-wide .game-img {
+    width: 5.56vw;
+    height: 7.99vw;
+    border-radius: 0.7vw;
+    margin-left: 1.39vw;
+    margin-top: 1.04vw;
+    margin-bottom: 1.04vw;
+    object-fit: cover;
+}
+
+.catalog-game-card-wide .game-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.56vw;
+    margin-top: 1.04vw;
+    position: relative;
+    height: 7.99vw;
+    width: calc(100% - 8vw);
+}
+
+.catalog-game-card-wide .game-title {
+    color: #fff;
+    font-size: 1.25vw;
+    font-weight: normal;
+    margin-bottom: 0.69vw;
+    text-shadow: 0 0 0.56vw rgba(255, 255, 255, 0.5);
+}
+
+.catalog-game-card-wide .game-rating-row {
+    display: flex;
+    align-items: center;
+    gap: 0.69vw;
+}
+
+.catalog-game-card-wide .stars-container {
+    position: relative;
+    width: 7.51vw;
+    height: 1.39vw;
+    display: flex;
+}
+
+.catalog-game-card-wide .stars-bg,
+.catalog-game-card-wide .stars-fill {
+    display: flex;
+    gap: 0.14vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.catalog-game-card-wide .stars-bg img {
+    width: 1.39vw;
+    height: 1.39vw;
+    filter: brightness(0) invert(1);
+    opacity: 0.2;
+}
+
+.catalog-game-card-wide .stars-fill img {
+    width: 1.39vw;
+    height: 1.39vw;
+    filter: brightness(1.3) drop-shadow(0 0 0.56vw rgba(107, 94, 234, 0.8));
+}
+
+.catalog-game-card-wide .rating-box {
+    width: 2.78vw;
+    height: 2.22vw;
+    background-color: #6B5EEA;
+    border-radius: 0.35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.25vw;
+    font-weight: 500;
+    box-shadow: 0 0 0.56vw rgba(107, 94, 234, 0.5);
+    text-shadow: 0 0 0.28vw rgba(255, 255, 255, 0.5);
+}
+
+.catalog-game-card-wide .platform-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.catalog-game-card-wide .platform-icon {
+    width: 1.39vw;
+    height: 1.39vw;
+    filter: brightness(0) invert(1) drop-shadow(0 0 0.56vw rgba(255, 255, 255, 0.5));
+}
+
+.catalog-game-card-wide .wishlist-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1.81vw;
+    height: 1.81vw;
+    filter: brightness(0) invert(1) drop-shadow(0 0 0.56vw rgba(255, 255, 255, 0.5));
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.catalog-game-card-wide .wishlist-icon:hover {
+    transform: scale(1.15);
+}
+
+.catalog-game-card-wide .wishlist-icon.liked {
+    filter: invert(27%) sepia(82%) saturate(7444%) hue-rotate(354deg) brightness(97%) contrast(105%);
+    transform: scale(1.2);
+}
+
+.catalog-game-card-wide .game-price-block {
+    position: absolute;
+    right: 1.39vw;
+    bottom: 0.83vw;
+    display: flex;
+    align-items: center;
+    gap: 0.69vw;
+}
+
+.catalog-game-card-wide .game-discount {
+    color: #2ED573;
+    font-size: 1.39vw;
+    font-weight: bold;
+    text-shadow: 0 0 0.56vw rgba(46, 213, 115, 0.5);
+}
+
+.catalog-game-card-wide .game-price-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.catalog-game-card-wide .game-price-old {
+    color: #9AA3D9;
+    font-size: 0.9vw;
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.catalog-game-card-wide .game-price-new {
+    color: #fff;
+    font-size: 1.04vw;
+    font-weight: bold;
+    text-shadow: 0 0 0.56vw rgba(255, 255, 255, 0.5);
+}
+
+.catalog-game-card-wide .game-price-new.free {
+    color: #2ED573;
+    text-shadow: 0 0 0.56vw rgba(46, 213, 115, 0.5);
+}
+
+/* Sorting Dropdown List */
+.sort-dropdown-trigger {
+    position: relative;
+}
+
+.sort-dropdown-list {
+    position: absolute;
+    top: calc(100% + 0.5vw);
+    right: 0;
+    background: #2D346D;
+    border: 1px solid #444E8A;
+    border-radius: 0.5vw;
+    min-width: 12vw;
+    display: none;
+    flex-direction: column;
+    z-index: 100;
+    box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.sort-dropdown-trigger.active .sort-dropdown-list {
+    display: flex;
+}
+
+.sort-option {
+    padding: 0.7vw 1vw;
+    color: #fff;
+    font-size: 0.97vw;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.sort-option:hover {
+    background: #3C469B;
+}
+
+.sort-option.active {
+    color: #9C52FF;
+    background: rgba(156, 82, 255, 0.1);
+}
+
+/* Bottom Pagination */
+.catalog-bottom-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    margin-top: 2vw;
+    padding-top: 2vw;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pages-list {
+    display: flex;
+    align-items: center;
+    gap: 0.8vw;
+}
+
+.page-num {
+    min-width: 2.22vw;
+    height: 2.22vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.11vw;
+    cursor: pointer;
+    border-radius: 0.4vw;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.page-num:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.page-num.active {
+    color: #9C52FF;
+    border-color: #9C52FF;
+    background: rgba(156, 82, 255, 0.1);
+}
+
+.page-dots {
+    color: #9AA3D9;
+    font-size: 1.11vw;
+}
+
+.catalog-bottom-pagination .page-arrow {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 0.5vw;
+    transition: color 0.2s ease;
+}
+
+.catalog-bottom-pagination .page-arrow:hover {
+    color: #9C52FF;
+}
+
+/* Payment Systems Section */
+.payment-systems-section {
+    width: 100%;
+    height: 10.42vw;
+    background-color: #2C2F5B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.78vw;
+    margin-top: 0;
+    /* Remove margin to avoid gaps */
+    padding-top: 2vw;
+    /* Use padding for spacing if needed */
+}
+
+.payment-card {
+    width: 17.36vw;
+    height: 6.94vw;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 0.07vw solid rgba(255, 255, 255, 0.05);
+    border-radius: 0.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+.payment-card:hover {
+    transform: translateY(-0.35vw);
+    background-color: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.payment-card img {
+    width: 120%;
+    height: 120%;
+    object-fit: contain;
+    filter: drop-shadow(0 0 0.5vw rgba(0, 0, 0, 0.2));
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.payment-card:hover img {
+    opacity: 1;
+    transform: scale(1.1);
+    filter: drop-shadow(0 0.4vw 1vw rgba(0, 0, 0, 0.5));
+}

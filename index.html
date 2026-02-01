@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -15,8 +15,8 @@
         </div>
         <div class="nav">
             <ul class="ul_nav" style="list-style: none;">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
                 <li><a href="#">Моя библиотека</a></li>
                 <li><a href="#">Подержка</a></li>
             </ul>
@@ -179,26 +179,47 @@
         <h2 class="section-title">Категории</h2>
         <button class="rec-nav-btn prev category-prev">◀</button>
         <div class="category-list">
-            <div class="category-card">
+            <a href="catalog.html?genre=open-world" class="category-card">
                 <div class="category-bg"></div>
                 <div class="category-gradient"></div>
                 <span class="category-name">ОТКРЫТЫЙ МИР</span>
-            </div>
-            <div class="category-card">
+            </a>
+            <a href="catalog.html?genre=strategy" class="category-card">
                 <div class="category-bg"></div>
                 <div class="category-gradient"></div>
                 <span class="category-name">СТРАТЕГИЯ</span>
-            </div>
-            <div class="category-card">
+            </a>
+            <a href="catalog.html?genre=coop" class="category-card">
                 <div class="category-bg"></div>
                 <div class="category-gradient"></div>
                 <span class="category-name">КООП</span>
-            </div>
-            <div class="category-card">
+            </a>
+            <a href="catalog.html?genre=free" class="category-card">
                 <div class="category-bg"></div>
                 <div class="category-gradient"></div>
                 <span class="category-name">БЕСПЛАТНО</span>
-            </div>
+            </a>
+            <!-- Added more categories to demonstrate scrolling -->
+            <a href="catalog.html?genre=shooter" class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">ШУТЕРЫ</span>
+            </a>
+            <a href="catalog.html?genre=rpg" class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">RPG</span>
+            </a>
+            <a href="catalog.html?genre=active" class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">ЭКШЕН</span>
+            </a>
+            <a href="catalog.html?genre=racing" class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">ГОНКИ</span>
+            </a>
         </div>
         <button class="rec-nav-btn next category-next">▶</button>
         <div class="category-pagination">
@@ -266,7 +287,7 @@
             <div class="games-column col-1">
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/warhamer dark omen.png" class="game-img" alt="Warhammer">
+                    <img src="images/figama/game_list/warhammer_dark_omen.png" class="game-img" alt="Warhammer">
                     <div class="game-details">
                         <div class="game-title">Warhammer: Dark Omen</div>
                         <div class="game-rating-row">
@@ -302,7 +323,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/cyberpunk.png" class="game-img" alt="Cyberpunk">
+                    <img src="images/figama/game_list/cyberpunk.png" class="game-img" alt="Cyberpunk">
                     <div class="game-details">
                         <div class="game-title">Cyberpunk 2077: Полное издание</div>
                         <div class="game-rating-row">
@@ -338,7 +359,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/ведьмак3дикая.png" class="game-img" alt="Witcher 3">
+                    <img src="images/figama/game_list/witcher3.png" class="game-img" alt="Witcher 3">
                     <div class="game-details">
                         <div class="game-title">Ведьмак 3: Дикая Охота</div>
                         <div class="game-rating-row">
@@ -374,7 +395,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/fallout.png" class="game-img" alt="Fallout 4">
+                    <img src="images/figama/game_list/fallout.png" class="game-img" alt="Fallout 4">
                     <div class="game-details">
                         <div class="game-title">Fallout 4: Game of the Year Edition</div>
                         <div class="game-rating-row">
@@ -410,7 +431,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/baldus.png" class="game-img" alt="Baldur's Gate 3">
+                    <img src="images/figama/game_list/baldus.png" class="game-img" alt="Baldur's Gate 3">
                     <div class="game-details">
                         <div class="game-title">Baldur's Gate 3</div>
                         <div class="game-rating-row">
@@ -451,7 +472,7 @@
             <div class="games-column col-2">
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/game--fortnite.png" class="game-img" alt="Fortnite">
+                    <img src="images/figama/game_list/game--fortnite.png" class="game-img" alt="Fortnite">
                     <div class="game-details">
                         <div class="game-title">Fortnite</div>
                         <div class="game-rating-row">
@@ -484,7 +505,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/rocket legaue.png" class="game-img" alt="Rocket League">
+                    <img src="images/figama/game_list/rocket_league.png" class="game-img" alt="Rocket League">
                     <div class="game-details">
                         <div class="game-title">Rocket League®</div>
                         <div class="game-rating-row">
@@ -517,7 +538,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/hogwarts_legacy.png" class="game-img" alt="Hogwarts Legacy">
+                    <img src="images/figama/game_list/hogwarts_legacy.png" class="game-img" alt="Hogwarts Legacy">
                     <div class="game-details">
                         <div class="game-title">Hogwarts Legacy</div>
                         <div class="game-rating-row">
@@ -549,7 +570,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/gta5enh.png" class="game-img" alt="GTA V">
+                    <img src="images/figama/game_list/gta5enh.png" class="game-img" alt="GTA V">
                     <div class="game-details">
                         <div class="game-title">Grand Theft Auto V Enhanced</div>
                         <div class="game-rating-row">
@@ -585,7 +606,7 @@
                 </div>
 
                 <div class="game-card">
-                    <img src="images/figama/список игр/valorant.png" class="game-img" alt="Valorant">
+                    <img src="images/figama/game_list/valorant.png" class="game-img" alt="Valorant">
                     <div class="game-details">
                         <div class="game-title">VALORANT</div>
                         <div class="game-rating-row">
@@ -713,7 +734,7 @@
         <h1 class="cat-banner-headline">Найдите свою идеальную игру</h1>
         <p class="cat-banner-desc">Тысячи игр ждут вас. Используйте фильтры по жанрам, ценам и рейтингам, чтобы найти
             именно то, что нужно.</p>
-        <button class="cat-banner-btn">Перейти в каталог</button>
+        <button class="cat-banner-btn" onclick="location.href='catalog.html'">Перейти в каталог</button>
     </section>
 
     <section class="payment-systems-section reveal stagger-reveal">
@@ -740,11 +761,18 @@
         </ul>
         <div class="footer-settings">
             <div class="footer-setting">
-                <span>ENG <span class="active-setting">RUS</span> UZB</span>
+                <div class="setting-options">
+                    <span>ENG</span>
+                    <span class="active-setting">RUS</span>
+                    <span>UZB</span>
+                </div>
                 <span class="setting-label">:Язык</span>
             </div>
             <div class="footer-setting">
-                <span><span class="active-setting">USD</span> UZS</span>
+                <div class="setting-options">
+                    <span class="active-setting">USD</span>
+                    <span>UZS</span>
+                </div>
                 <span class="setting-label">:Валюта</span>
             </div>
         </div>
@@ -757,7 +785,8 @@
         </ul>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
