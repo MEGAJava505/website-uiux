@@ -11,7 +11,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo">
+            <img src="images/figama/logo.png" alt="Logo">
         </div>
         <div class="nav">
             <ul class="ul_nav" style="list-style: none;">
@@ -46,6 +46,714 @@
         </div>
     </header>
 
+    <section class="hero-carousel">
+        <div class="carousel-main">
+            <img src="images/figama/banner_genshin.jpg" alt="Banner">
+            <div class="content-box">
+                <h2 class="game-title">Genshin Impact</h2>
+                <p class="game-desc">Версия «Луна III» Genshin Impact представит дракона Дурина с двумя формами, а
+                    история
+                    Нод-Края продолжится в новой главе.</p>
+            </div>
+            <span class="price-text">БЕСПЛАТНО</span>
+            <button class="btn-play">Играть</button>
+            <div class="btn-icon">
+                <img src="icon/heart.svg" alt="Icon">
+            </div>
+        </div>
+        <div class="carousel-sidebar">
+            <div class="sidebar-card active" data-banner="images/figama/banner_genshin.jpg" data-title="Genshin Impact"
+                data-desc="Версия «Луна III» Genshin Impact представит дракона Дурина с двумя формами, а история Нод-Края продолжится в новой главе."
+                data-price="БЕСПЛАТНО">
+                <img src="images/figama/banner_genshin.jpg" alt="Genshin">
+                <span>Genshin Impact</span>
+            </div>
+            <div class="sidebar-card" data-banner="images/figama/nfs_subbanner.jpg" data-title="NFS Unbound"
+                data-desc="Need for Speed Unbound — аркадная гоночная игра в открытом мире с уникальным визуальным стилем."
+                data-price="$29.99">
+                <img src="images/figama/nfs_subbanner.jpg" alt="NFS">
+                <span>NFS Unbound</span>
+            </div>
+            <div class="sidebar-card" data-banner="images/figama/call_of_duty_black_ops_subbanner.jpg"
+                data-title="Call of Duty"
+                data-desc="Call of Duty: Black Ops 6 — новая часть легендарной серии шутеров от первого лица."
+                data-price="$69.99">
+                <img src="images/figama/call_of_duty_black_ops_subbanner.jpg" alt="CoD">
+                <span>Call of Duty</span>
+            </div>
+            <div class="sidebar-card" data-banner="images/figama/cs_subbanner.png" data-title="Counter Strike 2"
+                data-desc="Counter-Strike 2 — следующая эволюция легендарного соревновательного шутера."
+                data-price="БЕСПЛАТНО">
+                <img src="images/figama/cs_subbanner.png" alt="CS2">
+                <span>Counter Strike 2</span>
+            </div>
+            <div class="sidebar-card" data-banner="images/figama/fortnite_subbaner.png" data-title="Fortnite"
+                data-desc="Fortnite — бесплатная королевская битва со строительством и уникальным стилем."
+                data-price="БЕСПЛАТНО">
+                <img src="images/figama/fortnite_subbaner.png" alt="Fortnite">
+                <span>Fortnite</span>
+            </div>
+            <div class="sidebar-card" data-banner="images/figama/apex_subbanner.png" data-title="Apex Legends"
+                data-desc="Apex Legends — бесплатный командный шутер в жанре королевской битвы с уникальными Легендами."
+                data-price="БЕСПЛАТНО">
+                <img src="images/figama/apex_subbanner.png" alt="Apex">
+                <span>Apex Legends</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="carousel-divider"></div>
+
+    <section class="recommendations reveal">
+        <div class="rec-tabs">
+            <span class="rec-tab active" data-tab="popular">Популярное</span>
+            <span class="rec-tab" data-tab="discounts">Скидки</span>
+            <span class="rec-tab" data-tab="recommended">Рекомендуем для тебя</span>
+            <span class="rec-tab" data-tab="nowplaying">Сейчас играют</span>
+        </div>
+        <div class="rec-nav">
+            <button class="rec-nav-btn prev">◀</button>
+            <button class="rec-nav-btn next">▶</button>
+        </div>
+        <div class="rec-cards stagger-reveal">
+            <div class="rec-card">
+                <div class="rec-card-header">
+                    <span>Minecraft</span>
+                    <img src="icon/heart.svg" alt="Heart" class="rec-heart">
+                </div>
+                <div class="rec-card-image">
+                    <img src="images/figama/minecraft_cardd.png" alt="Game">
+                </div>
+                <div class="rec-card-footer">
+                    <span class="rec-price">$29.99</span>
+                    <span class="rec-discount">-25%</span>
+                    <span class="rec-old-price">$39.99</span>
+                </div>
+            </div>
+            <div class="rec-card">
+                <div class="rec-card-header">
+                    <span>Call of duty: Black Ops</span>
+                    <img src="icon/heart.svg" alt="Heart" class="rec-heart">
+                </div>
+                <div class="rec-card-image">
+                    <img src="images/figama/call_of_duty_black_ops_subbanner.jpg" alt="Game">
+                </div>
+                <div class="rec-card-footer">
+                    <span class="rec-price">$49.99</span>
+                    <span class="rec-discount">-25%</span>
+                    <span class="rec-old-price">$59.99</span>
+                </div>
+            </div>
+            <div class="rec-card">
+                <div class="rec-card-header">
+                    <span>APEX LEGENDS</span>
+                    <img src="icon/heart.svg" alt="Heart" class="rec-heart">
+                </div>
+                <div class="rec-card-image">
+                    <img src="images/figama/apex_subbanner.png" alt="Game">
+                </div>
+                <div class="rec-card-footer">
+                    <span class="rec-price free">БЕСПЛАТНО</span>
+                </div>
+            </div>
+            <div class="rec-card">
+                <div class="rec-card-header">
+                    <span>The Peak</span>
+                    <img src="icon/heart.svg" alt="Heart" class="rec-heart">
+                </div>
+                <div class="rec-card-image">
+                    <img src="images/figama/peak_pc.png" alt="Game">
+                </div>
+                <div class="rec-card-footer">
+                    <span class="rec-price">$9.99</span>
+                    <span class="rec-discount">-75%</span>
+                    <span class="rec-old-price">$39.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="rec-divider"></div>
+
+    <section class="categories-section reveal">
+        <h2 class="section-title">Категории</h2>
+        <button class="rec-nav-btn prev category-prev">◀</button>
+        <div class="category-list">
+            <div class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">ОТКРЫТЫЙ МИР</span>
+            </div>
+            <div class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">СТРАТЕГИЯ</span>
+            </div>
+            <div class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">КООП</span>
+            </div>
+            <div class="category-card">
+                <div class="category-bg"></div>
+                <div class="category-gradient"></div>
+                <span class="category-name">БЕСПЛАТНО</span>
+            </div>
+        </div>
+        <button class="rec-nav-btn next category-next">▶</button>
+        <div class="category-pagination">
+            <div class="cat-page-line active"></div>
+            <div class="cat-page-line"></div>
+            <div class="cat-page-line"></div>
+            <div class="cat-page-line"></div>
+        </div>
+    </section>
+
+    <section class="feature-section reveal">
+        <div class="feature-container">
+            <div class="feature-header">
+                <div class="feature-left">
+                    <img src="icon/present.svg" alt="Gift" class="feature-icon">
+                    <span class="feature-title">Лично для вас</span>
+                </div>
+                <button class="feature-more-btn">Подробнее</button>
+            </div>
+            <div class="feature-main-content">
+                <div class="feature-block">
+                    <div class="feature-card card-we-were">
+                        <img src="images/figama/special_offer_avaiable.png" alt="Special Offer" class="feature-overlay">
+                        <div class="feature-card-footer purple">
+                            <span>Сейчас бесплатно</span>
+                        </div>
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-game-title">We Were Here Together</div>
+                        <div class="feature-game-sub">Бесплатно до <span id="next-friday-date"></span></div>
+                    </div>
+                </div>
+                <div class="feature-block">
+                    <div class="feature-card card-secret">
+                        <img src="images/figama/special_offer_unavaiable.png" alt="Special Offer"
+                            class="feature-overlay">
+                        <div class="feature-card-footer black">
+                            <span>Тайная Игра</span>
+                        </div>
+                    </div>
+                    <div class="feature-info centered-row">
+                        <div class="feature-game-title timer-text">Откроется через</div>
+                        <div class="feature-timer">
+                            <span>07</span> : <span>12</span> : <span>43</span> : <span>05</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="games-list-section reveal">
+        <div class="games-tabs">
+            <div class="games-tab tab-1">
+                <span class="tab-title">Самые покупаемые ></span>
+                <div class="tab-line"></div>
+            </div>
+            <div class="games-tab tab-2">
+                <span class="tab-title">Самые Популярные ></span>
+                <div class="tab-line"></div>
+            </div>
+        </div>
+        <div class="games-columns">
+
+            <div class="games-column col-1">
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/warhamer dark omen.png" class="game-img" alt="Warhammer">
+                    <div class="game-details">
+                        <div class="game-title">Warhammer: Dark Omen</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 92%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.6</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-discount">-10%</div>
+                        <div class="game-price-col">
+                            <div class="game-price-old">6.29$</div>
+                            <div class="game-price-new">5.66$</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/cyberpunk.png" class="game-img" alt="Cyberpunk">
+                    <div class="game-details">
+                        <div class="game-title">Cyberpunk 2077: Полное издание</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 86%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.3</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-discount">-50%</div>
+                        <div class="game-price-col">
+                            <div class="game-price-old">39.99$</div>
+                            <div class="game-price-new">19.99$</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/ведьмак3дикая.png" class="game-img" alt="Witcher 3">
+                    <div class="game-details">
+                        <div class="game-title">Ведьмак 3: Дикая Охота</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 96%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.8</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-discount">-90%</div>
+                        <div class="game-price-col">
+                            <div class="game-price-old">19.99$</div>
+                            <div class="game-price-new">1.99$</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/fallout.png" class="game-img" alt="Fallout 4">
+                    <div class="game-details">
+                        <div class="game-title">Fallout 4: Game of the Year Edition</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 80%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.0</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-discount">-75%</div>
+                        <div class="game-price-col">
+                            <div class="game-price-old">29.99$</div>
+                            <div class="game-price-new">7.49$</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/baldus.png" class="game-img" alt="Baldur's Gate 3">
+                    <div class="game-details">
+                        <div class="game-title">Baldur's Gate 3</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 92%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.6</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                                <img src="icon/apple.svg" class="platform-icon" alt="Apple">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-discount">-25%</div>
+                        <div class="game-price-col">
+                            <div class="game-price-old">29.99$</div>
+                            <div class="game-price-new">22.49$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="games-column col-2">
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/game--fortnite.png" class="game-img" alt="Fortnite">
+                    <div class="game-details">
+                        <div class="game-title">Fortnite</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 86%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.3</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                                <img src="icon/playstation.svg" class="platform-icon" alt="PS">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-price-new free">Бесплатно</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/rocket legaue.png" class="game-img" alt="Rocket League">
+                    <div class="game-details">
+                        <div class="game-title">Rocket League®</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 88%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.4</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                                <img src="icon/playstation.svg" class="platform-icon" alt="PS">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-price-new free">Бесплатно</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/hogwarts_legacy.png" class="game-img" alt="Hogwarts Legacy">
+                    <div class="game-details">
+                        <div class="game-title">Hogwarts Legacy</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 94%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.7</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-price-new">49.99$</div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/gta5enh.png" class="game-img" alt="GTA V">
+                    <div class="game-details">
+                        <div class="game-title">Grand Theft Auto V Enhanced</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 92%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.6</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-discount">-50%</div>
+                        <div class="game-price-col">
+                            <div class="game-price-old">29.99$</div>
+                            <div class="game-price-new">14.99$</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-card">
+                    <img src="images/figama/список игр/valorant.png" class="game-img" alt="Valorant">
+                    <div class="game-details">
+                        <div class="game-title">VALORANT</div>
+                        <div class="game-rating-row">
+                            <div class="stars-container">
+                                <div class="stars-bg">
+                                    <img src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star"><img src="icon/star.svg" alt="star"><img
+                                        src="icon/star.svg" alt="star">
+                                </div>
+                                <div class="stars-fill" style="width: 90%">
+                                    <img src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star"><img src="icon/star-filled.svg" alt="star"><img
+                                        src="icon/star-filled.svg" alt="star"><img src="icon/star-filled.svg"
+                                        alt="star">
+                                </div>
+                            </div>
+                            <div class="rating-box">4.5</div>
+                            <div class="platform-box">
+                                <img src="icon/windows.svg" class="platform-icon" alt="Windows">
+                            </div>
+                        </div>
+                        <div class="game-actions">
+                            <img src="icon/heart.svg" class="wishlist-icon" alt="Wishlist">
+                        </div>
+                    </div>
+                    <div class="game-price-block">
+                        <div class="game-price-new free">Бесплатно</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-section reveal">
+        <div class="news-header">Новости</div>
+        <div class="news-line"></div>
+        <div class="news-container stagger-reveal">
+            <div class="news-card">
+                <img src="images/figama/news/totalwar.png" class="news-img" alt="Total War">
+                <div class="news-gradient"></div>
+                <div class="news-title-block">
+                    <span class="news-label">Release:</span>
+                    <span class="news-text">Total War: THREE KINGDOMS - Original Soundtrack and The Furious Wild
+                        Original Soundtrack</span>
+                </div>
+                <div class="news-footer">
+                    <div class="news-comments">
+                        <img src="icon/comment.svg" class="comment-icon" alt="comments">
+                        <span>6</span>
+                    </div>
+                    <div class="news-date">4 дня назад</div>
+                </div>
+            </div>
+
+            <div class="news-card small">
+                <img src="images/figama/news/lovish.png" class="news-img" alt="Lovish">
+                <div class="news-gradient"></div>
+                <div class="news-title-block">
+                    <span class="news-label">Coming soon:</span>
+                    <span class="news-text">Lovish</span>
+                </div>
+                <div class="news-footer">
+                    <div class="news-comments">
+                        <img src="icon/comment.svg" class="comment-icon" alt="comments">
+                        <span>10</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card small">
+                <img src="images/figama/news/worldwide rush.png" class="news-img" alt="Worldwide Rush">
+                <div class="news-gradient"></div>
+                <div class="news-title-block">
+                    <span class="news-label">Release:</span>
+                    <span class="news-text">Worldwide Rush</span>
+                </div>
+                <div class="news-footer">
+                    <div class="news-comments">
+                        <img src="icon/comment.svg" class="comment-icon" alt="comments">
+                        <span>7</span>
+                    </div>
+                    <div class="news-date">5 дней назад</div>
+                </div>
+            </div>
+
+            <div class="news-card small extra-news">
+                <img src="images/figama/news/totalwar.png" class="news-img" alt="Extra News">
+                <div class="news-gradient"></div>
+                <div class="news-title-block">
+                    <span class="news-label">Update:</span>
+                    <span class="news-text">New Balance Patch 1.2</span>
+                </div>
+                <div class="news-footer">
+                    <div class="news-comments">
+                        <img src="icon/comment.svg" class="comment-icon" alt="comments">
+                        <span>12</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card extra-news">
+                <img src="images/figama/news/lovish.png" class="news-img" alt="Extra News">
+                <div class="news-gradient"></div>
+                <div class="news-title-block">
+                    <span class="news-label">Event:</span>
+                    <span class="news-text">Winter Sale Starts Tomorrow!</span>
+                </div>
+                <div class="news-footer">
+                    <div class="news-comments">
+                        <img src="icon/comment.svg" class="comment-icon" alt="comments">
+                        <span>24</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news-more-btn">
+            Развернуть
+        </div>
+    </section>
+
+    <section class="category-banner-section reveal">
+        <div class="cat-banner-gradient"></div>
+        <h1 class="cat-banner-headline">Найдите свою идеальную игру</h1>
+        <p class="cat-banner-desc">Тысячи игр ждут вас. Используйте фильтры по жанрам, ценам и рейтингам, чтобы найти
+            именно то, что нужно.</p>
+        <button class="cat-banner-btn">Перейти в каталог</button>
+    </section>
+
+    <section class="payment-systems-section reveal stagger-reveal">
+        <div class="payment-card">
+            <img src="images/uzcard.png" alt="Uzcard">
+        </div>
+        <div class="payment-card">
+            <img src="images/Humo-01.png" alt="Humo">
+        </div>
+        <div class="payment-card">
+            <img src="images/Visa_Inc.-Logo.wine.png" alt="Visa">
+        </div>
+        <div class="payment-card">
+            <img src="images/Mastercard-Logo.wine.png" alt="Mastercard">
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <ul class="footer-nav">
+            <li><a href="#">Активировать код</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Предложить игру</a></li>
+            <li><a href="#">Сообщество</a></li>
+        </ul>
+        <div class="footer-settings">
+            <div class="footer-setting">
+                <span>ENG <span class="active-setting">RUS</span> UZB</span>
+                <span class="setting-label">:Язык</span>
+            </div>
+            <div class="footer-setting">
+                <span><span class="active-setting">USD</span> UZS</span>
+                <span class="setting-label">:Валюта</span>
+            </div>
+        </div>
+        <div class="footer-line"></div>
+        <ul class="footer-secondary-links">
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><a href="#">Пользовательское соглашение</a></li>
+            <li><a href="#">Уведомление о cookie</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </footer>
 
     <script src="script.js"></script>
 </body>
