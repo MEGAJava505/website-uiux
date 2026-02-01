@@ -2,24 +2,28 @@
     font-family: 'JetBrains Mono';
     src: url('font/JetBrainsMono-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('font/JetBrainsMono-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('font/JetBrainsMono-Medium.ttf') format('truetype');
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'JetBrains Mono';
     src: url('font/JetBrainsMono-Light.ttf') format('truetype');
     font-weight: 300;
+    font-display: swap;
 }
 
 :root {
@@ -258,6 +262,10 @@ header {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: opacity 0.25s ease-out;
+    will-change: opacity;
+    transform: translateZ(0);
+    /* Hardware acceleration */
 }
 
 .content-box {
@@ -267,6 +275,7 @@ header {
     padding: 1.4vw;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 0.7vw;
+    transition: opacity 0.2s ease-out;
 }
 
 .game-title {
@@ -292,6 +301,7 @@ header {
     background: rgba(0, 0, 0, 0.3);
     padding: 0.7vw 1.4vw;
     border-radius: 0.7vw;
+    transition: opacity 0.2s ease-out;
 }
 
 .btn-play {
@@ -309,6 +319,7 @@ header {
     font-size: 2.1vw;
     cursor: pointer;
     filter: drop-shadow(0 0.28vw 0.56vw rgba(0, 0, 0, 0.3));
+    transition: all 0.2s ease-out;
 }
 
 .btn-icon {

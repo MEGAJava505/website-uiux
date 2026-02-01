@@ -15,14 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('active');
 
 
+            const contentBox = document.querySelector('.content-box');
+            const btnPlay = document.querySelector('.btn-play');
+
             bannerImg.style.opacity = '0';
+            if (contentBox) contentBox.style.opacity = '0';
+            if (priceText) priceText.style.opacity = '0';
+            if (btnPlay) btnPlay.style.opacity = '0';
+
             setTimeout(() => {
                 bannerImg.src = card.dataset.banner;
                 gameTitle.textContent = card.dataset.title;
                 gameDesc.textContent = card.dataset.desc;
                 priceText.textContent = card.dataset.price;
+
                 bannerImg.style.opacity = '1';
-            }, 300);
+                if (contentBox) contentBox.style.opacity = '1';
+                if (priceText) priceText.style.opacity = '1';
+                if (btnPlay) btnPlay.style.opacity = '1';
+            }, 200);
         });
     });
 
